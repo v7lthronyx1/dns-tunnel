@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 #
 # dns-tunnel - a DNS tunnel (dnstt) on your own server, for when only DNS gets out
-# https://github.com/v74all/dns-tunnel
+# https://github.com/w59520760-sketch/dns-tunnel
 #
 # Read it before you run it. Everything it touches is listed in README.md.
 
@@ -14,7 +14,7 @@ DNSTT=dnstt-20260501
 # sha256 of the release binaries, built by build-dnstt.sh from the signed $DNSTT.zip
 SHA_AMD64=16c4df19255d7b63efcce8382d55d6da49272d9c5a4bfdf041c1f77c2cd17ad8
 SHA_ARM64=45cee8cb7d959a69ac54014b40a68e72d7fc54b0d6f494d8de6075277447a788
-RELEASE=https://github.com/v74all/dns-tunnel/releases/download/v$VERSION
+RELEASE=https://github.com/w59520760-sketch/dns-tunnel/releases/download/v$VERSION
 
 BIN=/usr/local/bin/dnstt-server
 ETC=/etc/dns-tunnel
@@ -221,7 +221,7 @@ cmd_install() {
 
 	apt_need nft nftables
 	get_binary
-	step 2 dnstt "$DNSTT (v74all/dns-tunnel $VERSION release), sha256 ok"
+	step 2 dnstt "$DNSTT (w59520760-sketch/dns-tunnel $VERSION release), sha256 ok"
 
 	install -d -m 755 "$ETC"
 	id "$SVC_USER" >/dev/null 2>&1 ||
