@@ -22,7 +22,7 @@
 از طریق `SSH` وارد سرور خارج خود شوید و دو دستور زیر را اجرا کنید:
 
 ```bash
-curl -fsSL https://raw.githubusercontent.com/w59520760-sketch/dns-tunnel/main/install.sh -o install.sh
+curl -fsSL https://raw.githubusercontent.com/v7lthronyx1/dns-tunnel/main/install.sh -o install.sh
 sudo bash install.sh --domain t.myserver.xyz
 ```
 
